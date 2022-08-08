@@ -1,6 +1,6 @@
 {
   "name": "mk-tunnel",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Connect to reverse proxy with random available ports",
   "main": "./src/index.js",
   "bin": {
