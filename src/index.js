@@ -20,13 +20,11 @@ program
 program
   .command('port')
   .description('Check port status')
-  .option('--debug')
-  .action((str, options) => {
-    if (options.debug) {
-      Logger.enableDebug();
-    }
-
-    getAvailablePorts(Logger);
+  .action(async (str, options) => {
+    Logger.enableDebug();
+    const { instanceIp, instanceAccessKeyPath } =
+      await getConfigurationsWithChecks(Logger);
+    getAvailablePorts({ instanceIp, instanceAccessKeyPath, Logger });
   });
 
 program
