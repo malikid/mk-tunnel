@@ -10,13 +10,13 @@ module.exports = async (Logger) => {
     {
       type: 'input',
       name: 'instanceIp',
-      message: 'Enter AWS EC2 instance IP or DNS',
+      message: 'Enter AWS EC2 instance IP or DNS:',
       default: config && config.instanceIp
     },
     {
       type: 'input',
       name: 'instanceAccessKeyPath',
-      message: 'Enter the path of your access key (.pem)',
+      message: 'Enter the path of your access key (.pem):',
       default: config && config.instanceAccessKeyPath
     },
     {
