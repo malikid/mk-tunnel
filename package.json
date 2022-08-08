@@ -1,0 +1,42 @@
+{
+  "name": "mk-tunnel",
+  "version": "0.0.1",
+  "description": "Connect to reverse proxy with random available ports",
+  "main": "./src/index.js",
+  "bin": {
+    "mk-tunnel": "./src/index.js"
+  },
+  "scripts": {
+    "release:patch": "standard-version --release-as patch",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "format": "prettier-eslint $PWD/'src/**/*.{js,json}' --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tunnel",
+    "proxy",
+    "reverse proxy",
+    "ngrok",
+    "tunnelto"
+  ],
+  "author": "MingHo Chang <malikid.chang@gmail.com>",
+  "license": "BSD-4-Clause",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "commander": "^9.4.0",
+    "inquirer": "^8.2.4",
+    "os": "^0.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^6.0.1",
+    "standard-version": "^9.5.0"
+  }
+}
