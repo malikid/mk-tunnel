@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { program } = require('commander');
 const { name, version, description } = require('../package.json');
 const interactive = require('./utils/interactive');
